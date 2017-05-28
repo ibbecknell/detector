@@ -29,7 +29,6 @@ def update_blob(filename, date, time):
     #db.close()
 
 def runpi():
-    print("runpi")
     sensor = 4
 
     GPIO.setmode(GPIO.BCM)
@@ -58,7 +57,7 @@ def runpi():
                     p_time = datetime.now().strftime("%H.%M.%S")
                 #            camera.capture("%s.jpg" % filename)
                     print("picture taken!")
-                   # update_blob(file,date,p_time)
+                    update_blob(file,date,p_time)
             else:
                 continue
                 #   camera.start_recording(filename)
