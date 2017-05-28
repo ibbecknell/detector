@@ -52,7 +52,7 @@ def runpi():
                 take_pic = raw_input('Take image? (y/n)')
                 if take_pic == 'y':
                     filename = datetime.now().strftime("%Y-%m-%d_%H.%M.%S.jpg")
-                    camera.capture("/home/pi/detector/images/%s"%filename)
+                    camera.capture("/home/pi/Desktop/detector/images/%s"%filename)
                     file = "/home/pi/detector/images/%s"%filename
                     date = datetime.now().strftime("%Y-%m-%d")
                     p_time = datetime.now().strftime("%H.%M.%S")
